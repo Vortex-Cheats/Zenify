@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenify</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      /* Remove default margin */
+      background-color: #000;
+      color: #fff;
+      overflow-y: scroll;
+      scrollbar-width: thin;
+      scrollbar-color: #333333 transparent;
+    }
+
+    /* Customize scrollbar for Webkit (Chrome, Safari) */
+    body::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background-color: #333333;
+      border-radius: 120px;
+      /* Rounded scrollbar thumb */
+    }
+
+    body::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    a {
+      text-decoration: none;
+      /* Remove underlines from links */
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      /* Make the container full height of the viewport */
+    }
+
+    /* Tab section styles */
+    .tabs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      /* Black background */
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      /* Add a subtle shadow */
+    }
+
+    .tab {
+      text-decoration: none;
+      color: #fff;
+      margin-right: 10px;
+      /* Add space between tabs */
+      border: 2px solid transparent;
+      border-radius: 10px;
+      padding: 5px 10px;
+      border-color: #333333;
+      transition: border-color 0.3s ease;
+    }
+
+    .tab:hover {
+      border-color: #fff;
+      /* Add the desired outline color on hover */
+    }
+
+    /* Title section styles */
+    .title-section {
+      text-align: center;
+    }
+
+    .title {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .download-button {
+      background-color: cyan;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      /* Add box-shadow transition */
+      text-decoration: none;
+      /* Remove underlines from button */
+      box-shadow: 0 0 40px cyan;
+      /* Add cyan-colored shadow on hover for glowing effect */
+    }
+
+    .download-button:hover {
+      background-color: #00FFFF;
+      box-shadow: 0 0 50px cyan;
+      /* Add cyan-colored shadow on hover for glowing effect */
+    }
+
+    .download-icon {
+      margin-right: 10px;
+    }
+
+    .download-icon img {
+      width: 24px;
+      /* Adjust the icon's width as needed */
+      height: 24px;
+      /* Adjust the icon's height as needed */
+      vertical-align: middle;
+    }
+
+    /* Scroll animation section styles */
+    .scroll-section {
+      display: flex;
+      /* Make the scroll sections a flex container */
+      flex-direction: column;
+      /* Stack the sections vertically */
+      align-items: center;
+      /* Center content horizontally */
+      text-align: center;
+      /* Center text */
+      opacity: 0;
+      /* Initially hide the scroll sections */
+      transform: translateY(20px);
+      /* Slide down effect */
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      /* Add transition */
+      padding: 50px 0;
+    }
+
+    .animation-visible {
+      opacity: 1;
+      /* Show the scroll sections with opacity transition */
+      transform: translateY(0);
+      /* Slide up effect */
+    }
+
+    /* Add more styles and animations as needed for the scroll section */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="tabs">
+      <a href="index.html" class="tab">Home</a>
+      <a href="Proxy.html" class="tab">Proxy</a>
+    </div>
+
+    <div class="title-section">
+      <h1 class="title">Zenify</h1>
+      <p class="description">The Ultimate Unblocking Proxy, Zenify!</p>
+      <a href="Proxy.html" class="download-button">
+        Zenify - Proxy
+      </a>
+    </div>
+  </div>
+
+  <div class="content">
+<div id="proxy" class="animated-section scroll-section">
+	<h1>Unlock Any Website with Zenify Proxy</h1>
+	<p>Experience the power of Zenify Proxy, your gateway to accessing any website of your choice, securely and anonymously.</p>
+	<p>Why choose Zenify Proxy:</p>
+	<ul>
+	  <li>Seamless and fast access to blocked websites.</li>
+	  <li>Protect your privacy with encrypted connections.</li>
+	  <li>Bypass restrictions and surf the web freely.</li>
+	</ul>
+	<!-- Add more content here to describe your proxy service -->
+	<p>Unlock the internet's full potential with Zenify Proxy. Start browsing anonymously today!</p>
+  <!-- Add this code to your HTML -->
+<div id="control" class="animated-section scroll-section">
+	<h1>You're Currently in Control</h1>
+	<p>Welcome to Control, where you have the power to shape your destiny.</p>
+	<p>What Control offers:</p>
+	<ul>
+	  <li>Endless possibilities and opportunities.</li>
+	  <li>The ability to make your own choices and decisions.</li>
+	  <li>Take charge of your life and reach your goals.</li>
+	</ul>
+	<!-- Add more content here to describe Control -->
+	<p>Embrace the freedom of Control and create the life you desire.</p>
+  </div>
+<!-- Add this code to your HTML -->
+<div id="made-by-aoxn-blue" class="animated-section scroll-section">
+	<h1>This Website is Crafted by Aoxn-Blue</h1>
+	<p>Explore the creative world of Aoxn-Blue, the talented team behind this website.</p>
+	<p>What Aoxn-Blue offers:</p>
+	<ul>
+	  <li>Innovative web design and development.</li>
+	  <li>Attention to detail and user-friendly experiences.</li>
+	  <li>Join our Discord <a href="https://discord.gg/5srBjvVhcK" target="_blank">aoxn-blue</a> to learn more.</li>
+	</ul>
+	<!-- Add more content here to describe Aoxn-Blue's work -->
+	<p>Discover the artistry of Aoxn-Blue and their commitment to excellence in web design.</p>
+  </div>
+	
+</div>
+  
+    </div>
+
+
+
+
+    <script>
+      // JavaScript to handle scroll animations
+      const scrollSections = document.querySelectorAll('.scroll-section');
+
+      function checkAnimation() {
+        scrollSections.forEach((section) => {
+          const sectionTop = section.getBoundingClientRect().top;
+          const windowBottom = window.innerHeight - 50; // Adjust as needed
+
+          if (sectionTop < windowBottom) {
+            section.classList.add('animation-visible');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', checkAnimation);
+      window.addEventListener('resize', checkAnimation);
+      checkAnimation(); // Initial check on page load
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zenify</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon.png">
+    <style>
+            body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      /* Remove default margin */
+      background-color: #000;
+      color: #fff;
+      overflow-y: scroll;
+      scrollbar-width: thin;
+      scrollbar-color: #333333 transparent;
+    }
+
+	    /* Customize scrollbar for Webkit (Chrome, Safari) */
+		body::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background-color: #333333;
+      border-radius: 120px;
+      /* Rounded scrollbar thumb */
+    }
+
+    body::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    a {
+      text-decoration: none;
+      /* Remove underlines from links */
+    }
+		.container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      /* Make the container full height of the viewport */
+    }
+
+	.url input[type="text"] {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px; /* Increase the border-radius for a rounder appearance */
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto; /* Center the input horizontally */
+    margin-bottom: 10px;
+    border: 2px solid #333333; /* Add a border to make it look flatter */
+}
+
+
+
+.url button {
+    display: none; /* Hide the button */
+}
+
+   /* Tab section styles */
+   .tabs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      /* Black background */
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      /* Add a subtle shadow */
+    }
+
+    .tab {
+      text-decoration: none;
+      color: #fff;
+      margin-right: 10px;
+      /* Add space between tabs */
+      border: 2px solid transparent;
+      border-radius: 10px;
+      padding: 5px 10px;
+      border-color: #333333;
+      transition: border-color 0.3s ease;
+    }
+
+    .tab:hover {
+      border-color: #fff;
+      /* Add the desired outline color on hover */
+    }
+	.title-section {
+      text-align: center;
+    }
+
+    .title {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+    </style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="tabs">
+		  <a href="index.html" class="tab">Home</a>
+		  <a href="Proxy.html" class="tab">Proxy</a>
+		</div>
+	
+		<div class="title-section">
+            <h1 class="title">Zenify</h1>
+            <p class="description">The Cleanest Proxy Service Ever - Vort-x Is Here!</p>
+            <form class="url" method="POST" id="urlForm" autocomplete="off">
+                <input name="url" id="iurl" placeholder="https://example.com" type="text">
+                <button class="btn" type="submit" id="alloydefault">Unb&zwnj;lock</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/surf.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171354974-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-171354974-1');
+
+        // Handle form submission when Enter is pressed
+        document.getElementById('urlForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+            checkPassword(); // Call your checkPassword function here
+        });
+    </script>
+</body>
+
+</html>
